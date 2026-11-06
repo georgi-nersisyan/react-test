@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import TopBanner from './components/topBanner'
+import Summary from './components/summary'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    </>
+    <div className='flex justify-center items-center p-5'>
+      <div className='w-full p-5 rounded-2xl flex flex-col gap-6 bg-gray-900'>
+        <TopBanner />
+        
+        <Summary />
+      </div>
+    </div>
   )
 }
 
